@@ -1,0 +1,56 @@
+[project]
+name = "drowsyalert"
+version = "0.1.0"
+description = "A CNN-based Driver Drowsiness Detection System using webcam, facial landmarks, PERCLOS, yawning detection, and head pose estimation."
+readme = "README.md"
+authors = [
+    { name = "khanv02", email = "189113800+khanv02@users.noreply.github.com" }
+]
+requires-python = ">=3.12"
+dependencies = [
+    "numpy",
+    "opencv-python",
+    "mediapipe",
+    "pandas",
+    "matplotlib",
+    "seaborn",
+    "scikit-learn",
+    "scipy",
+    "pillow",
+    "tqdm",
+    "torch",
+    "torchvision",
+    "torchaudio",
+]
+
+[dependency-groups]
+dev = [
+    "pytest",
+    "ruff",
+]
+
+[tool.uv]
+default-groups = ["dev"]
+
+[[tool.uv.index]]
+name = "pytorch-cu130"
+url = "https://download.pytorch.org/whl/cu130"
+explicit = true
+
+[tool.uv.sources]
+torch = [
+    { index = "pytorch-cu130" }
+]
+torchvision = [
+    { index = "pytorch-cu130" }
+]
+torchaudio = [
+    { index = "pytorch-cu130" }
+]
+
+[tool.ruff]
+line-length = 100
+target-version = "py312"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
