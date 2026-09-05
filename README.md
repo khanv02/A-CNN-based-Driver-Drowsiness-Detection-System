@@ -1,10 +1,7 @@
+# Xây dựng Hệ thống Phát hiện Dấu hiệu Buồn ngủ khi Lái xe qua Webcam
+### DrowsyAlert: A CNN-based Driver Drowsiness Detection System
+Hệ thống phát hiện dấu hiệu buồn ngủ của người lái xe thông qua webcam sử dụng mô hình CNN.
 
-
-Xây dựng Hệ thống Phát hiện Dấu hiệu Buồn ngủ khi Lái xe qua Webcam (DrowsyAlert: A CNN-based Driver Drowsiness Detection System)
-
-# DrowsyAlert
-
-A CNN-based Driver Drowsiness Detection System.
 
 ## Requirements
 
