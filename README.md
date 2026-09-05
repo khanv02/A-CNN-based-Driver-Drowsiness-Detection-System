@@ -32,4 +32,3 @@ uv sync
 ```powershell
 uv run python main.py
 ```
->>>>>>> master
