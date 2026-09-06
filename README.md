@@ -12,11 +12,12 @@ A CNN-based Driver Drowsiness Detection System.
 
 ## Installation
 
-### 1. Clone repository
+### 1. Clone repository and install uv
 
 ```powershell
 git clone <repository-url>
 cd drowsyalert
+powershell -c "irm https://astral.sh/uv/install.ps1 | more
 ```
 
 ### 2. Install dependencies
